@@ -15,3 +15,6 @@ use App\Http\Controllers\TorentjesController;
 */
 
 Route::get('/', [TorentjesController::class, 'index'])->name('torentjes.index');
+Route::get('/kamers', [TorentjesController::class, 'kamers'])->name('torentjes.kamers');
+Route::get('/voorzieningen', [TorentjesController::class, 'voorzieningen'])->name('torentjes.voorzieningen');
+Route::get('/contact', [TorentjesController::class, 'contact'])->name('torentjes.contact');

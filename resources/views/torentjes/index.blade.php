@@ -1,3 +1,3 @@
 <x-app-layout>
-    <p class="text-red-500">test</p>
+    <p class="text-red-500">Index</p>
 </x-app-layout>
