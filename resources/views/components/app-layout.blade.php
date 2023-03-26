@@ -15,22 +15,25 @@
 
     <!-- scripts -->
     @vite('resources/js/app.js')
+{{--    <script src="https://cdn.tailwindcss.com/3.2.4"></script>--}}
 
     <!-- Styles -->
     @vite('resources/css/app.css')
     @livewireStyles
 </head>
-<body class="bg-[#f3eed8] min-h-screen italic" style="font-family: 'Bodoni MT';">
+<body class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
     @livewire("navigation-menu")
     <main>
-        <div class="py-12">
+        <div class="sm:py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-[#E9E1B9] overflow-hidden shadow-xl sm:rounded-lg">
+                <div class="bg-[#E9E1B9] overflow-hidden sm:shadow-xl sm:rounded-lg">
                     {{ $slot }}
                 </div>
             </div>
         </div>
     </main>
     @livewireStyles
+{{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
+{{--    <script src="./node_modules/flowbite/dist/flowbite.js"></script>--}}
 </body>
 </html>
