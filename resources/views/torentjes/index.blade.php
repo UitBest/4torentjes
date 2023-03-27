@@ -11,18 +11,9 @@
         Deze site geeft u allerlei informatie over het gebruik van de bungalow en biedt u nuttige tips voor een aangenaam verblijf in de zuidelijke provincie Algarve. Indien u deze info doorleest dan worden veel vragen beantwoord.
     </x-body-text>
     <x-image-slider>
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/IMG_1599.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/Torentjes.jpeg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/voorzijde2.jpeg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/IMG_1599.jpg</x-first-image>
+        <x-image>img/Torentjes.jpeg</x-image>
+        <x-image>img/voorzijde2.jpeg</x-image>
     </x-image-slider>
     <x-body-text class="mt-14 mb-7">
         Wij verzoeken u in ieder geval hoofdstukken 3, 4 en 5 door te nemen, zodat het huis veilig en schoon wordt achtergelaten en gereed is voor als wij zelf terugkomen.
@@ -44,17 +35,11 @@
     </x-kamer-titel>
     <x-image-slider>
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/woonkamer/IMG_1550.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/woonkamer/IMG_1550.jpg</x-first-image>>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/woonkamer/IMG_1549.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/woonkamer/IMG_1549.jpg</x-image>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/woonkamer/IMG_1551.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
         <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="">
@@ -78,17 +63,11 @@
     </x-kamer-titel>
     <x-image-slider>
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/keuken/IMG_1609.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/keuken/IMG_1609.jpg</x-first-image>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/keuken/IMG_1610.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/keuken/IMG_1610.jpg</x-image>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/keuken/IMG_1611.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
         <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
@@ -107,13 +86,9 @@
     <h1 class="text-2xl ml-2 font-bold my-2">Voorzijde</h1>
     <x-image-slider>
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde2.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
         <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
@@ -127,13 +102,9 @@
     <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Master</h1>
     <x-image-slider>
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde2.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
         <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
@@ -147,13 +118,9 @@
     <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Achter</h1>
     <x-image-slider>
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url('img/slaapkamers/voorzijde2.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
         <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
@@ -166,7 +133,7 @@
 
 
     <!-- Badkamers -->
-    <x-kamer-titel src="couch.svg" kamer="badkamers">
+    <x-kamer-titel src="shower.svg" kamer="badkamers">
         Badkamers
     </x-kamer-titel>
 </x-app-layout>

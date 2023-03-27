@@ -21,7 +21,7 @@
             </div>
 
             <!-- Hamburger -->
-            <div class="flex fixed items-center sm:hidden right-3 top-3 bg-gray-200">
+            <div class="flex fixed items-center sm:hidden right-3 top-3 bg-[#E9E1B9] z-20">
                 <button @click="console.log('Button clicked!'); open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 transition">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
