@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{--<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">--}}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,12 @@
 
     <!-- scripts -->
     @vite('resources/js/app.js')
-{{--    <script src="https://cdn.tailwindcss.com/3.2.4"></script>--}}
+{{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
 
     <!-- Styles -->
     @vite('resources/css/app.css')
     @livewireStyles
+
 </head>
 <body class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
     @livewire("navigation-menu")
@@ -33,7 +34,6 @@
         </div>
     </main>
     @livewireStyles
-{{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
-{{--    <script src="./node_modules/flowbite/dist/flowbite.js"></script>--}}
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
