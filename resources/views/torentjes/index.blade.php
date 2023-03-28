@@ -41,24 +41,29 @@
         <!-- Item 3 -->
         <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
-    <x-body-icons>
-        <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="" wire:click="$emit('changeText', 'icon 1')">
+    <div x-data="{ name: '' }">
+        <x-body-icons>
+            <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 1'">
 
-        <div class="flex flex-col">
-            <img src="{{ url('img/svg/woonkamer/people.svg') }}" class="h-10 w-10" alt="" wire:click="$emit('changeText', 'Dit is image 1')">
-            <p class="text-center">6</p>
-        </div>
-        <img src="{{ url('img/svg/woonkamer/netflix.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/woonkamer/internet.svg') }}" class="h-10 w-10" alt="">
-        <div class="flex items-center h-10">
-            <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
-            <img src="{{ url('img/svg/woonkamer/couch.svg') }}" class="h-10 w-10 -mt-1" alt="">
-            <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
-        </div>
-    </x-body-icons>
-{{--    @livewire('info-text-box')--}}
-    <livewire:info-text-box/>
-
+            <div class="flex flex-col">
+                <img src="{{ url('img/svg/woonkamer/people.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 2'">
+                <p class="text-center">6</p>
+            </div>
+            <img src="{{ url('img/svg/woonkamer/netflix.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 3'">
+            <img src="{{ url('img/svg/woonkamer/internet.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 4'">
+            <div class="flex items-center h-10">
+                <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
+                <img src="{{ url('img/svg/woonkamer/couch.svg') }}" class="h-10 w-10 -mt-1" alt="" @click="name = 'specific name 5'">
+                <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
+            </div>
+        </x-body-icons>
+        <input type="text" x-model="name">
+    </div>
+{{--    <div x-data="{ name: '' }">--}}
+{{--        <input type="text" x-model="name">--}}
+{{--        <button @click="name = 'specific name 1'">Set Name 1</button>--}}
+{{--        <button @click="name = 'specific name 2'">Set Name 2</button>--}}
+{{--    </div>--}}
 
     <!-- Keuken -->
     <x-kamer-titel src="stove.svg" kamer="keuken">

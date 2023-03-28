@@ -24,7 +24,7 @@
 
 </head>
 <body class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
-    @livewire("navigation-menu")
+    <x-navigation-menu/>
     <main>
         <div class="sm:py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
