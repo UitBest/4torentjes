@@ -15,6 +15,7 @@
 
     <!-- scripts -->
     @vite('resources/js/app.js')
+    <script src="https://cdn.tailwindcss.com"></script>
 {{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
 
     <!-- Styles -->
@@ -33,7 +34,7 @@
             </div>
         </div>
     </main>
-    @livewireStyles
+    @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>

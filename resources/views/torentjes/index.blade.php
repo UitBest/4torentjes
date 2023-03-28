@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="">
         <div class="">
-            <img src="{{ url('img/Torentjes.jpeg') }}">
+{{--            <img src="{{ url('img/Torentjes.jpeg') }}">--}}
             <div class="-top-14 text-center relative z-10">
                 <a href="#woonkamer"><h1 class="bg-gray-500 opacity-75 text-white text-4xl">As Quatro Torrenzinhas</h1></a>
             </div>
@@ -42,9 +42,10 @@
         <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
     <x-body-icons>
-        <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="">
+        <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="" wire:click="$emit('changeText', 'icon 1')">
+
         <div class="flex flex-col">
-            <img src="{{ url('img/svg/woonkamer/people.svg') }}" class="h-10 w-10" alt="">
+            <img src="{{ url('img/svg/woonkamer/people.svg') }}" class="h-10 w-10" alt="" wire:click="$emit('changeText', 'Dit is image 1')">
             <p class="text-center">6</p>
         </div>
         <img src="{{ url('img/svg/woonkamer/netflix.svg') }}" class="h-10 w-10" alt="">
@@ -55,6 +56,8 @@
             <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
         </div>
     </x-body-icons>
+{{--    @livewire('info-text-box')--}}
+    <livewire:info-text-box/>
 
 
     <!-- Keuken -->
