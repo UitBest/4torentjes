@@ -14,27 +14,31 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- scripts -->
-    @vite('resources/js/app.js')
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
+{{--    <script src="https://cdn.tailwindcss.com"></script>--}}
 {{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
 
     <!-- Styles -->
-    @vite('resources/css/app.css')
     @livewireStyles
 
 </head>
-<body class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
-    <x-navigation-menu/>
-    <main>
-        <div class="sm:py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-[#E9E1B9] overflow-hidden sm:shadow-xl sm:rounded-lg">
-                    {{ $slot }}
+<body>
+    <div id="app">
+        <div class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
+            <x-navigation-menu/>
+            <main>
+                <div class="sm:py-12">
+                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                        <div class="bg-[#E9E1B9] overflow-hidden sm:shadow-xl sm:rounded-lg">
+                            {{ $slot }}
+                        </div>
+                    </div>
                 </div>
+            </main>
             </div>
-        </div>
-    </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    </div>
 </body>
 </html>

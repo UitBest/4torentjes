@@ -13,14 +13,10 @@ import { createApp } from 'vue';
  * to use in your application's views. An example is included for you.
  */
 
-const app = createApp({});
-
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
-
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;
+
 Alpine.start();
 
 import 'flowbite';
@@ -43,4 +39,4 @@ import 'flowbite';
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+// app.mount('#app');

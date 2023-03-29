@@ -6,13 +6,13 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class app-layout extends Component
+class body-icon extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(): void
-{
+    public function __construct()
+    {
         //
     }
 
@@ -21,6 +21,6 @@ class app-layout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.app-layout');
+        return view('components.body-icon');
     }
 }

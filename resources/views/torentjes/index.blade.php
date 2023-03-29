@@ -1,9 +1,9 @@
 <x-app-layout>
     <div class="">
         <div class="">
-{{--            <img src="{{ url('img/Torentjes.jpeg') }}">--}}
+            <img src="{{ url('img/Torentjes.jpeg') }}">
             <div class="-top-14 text-center relative z-10">
-                <a href="#woonkamer"><h1 class="bg-gray-500 opacity-75 text-white text-4xl">As Quatro Torrenzinhas</h1></a>
+                <h1 class="bg-gray-500 opacity-75 text-white text-4xl">As Quatro Torrenzinhas</h1>
             </div>
         </div>
     </div>
@@ -30,9 +30,7 @@
 
 
     <!-- Woonkamer -->
-    <x-kamer-titel src="television.svg" kamer="woonkamer">
-        Woonkamer
-    </x-kamer-titel>
+    <x-kamer-titel src="television.svg" kamer="Woonkamer"/>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/woonkamer/IMG_1550.jpg</x-first-image>>
@@ -41,34 +39,20 @@
         <!-- Item 3 -->
         <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
-    <div x-data="{ name: '' }">
-        <x-body-icons>
-            <img src="{{ url('img/svg/woonkamer/sonos.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 1'">
 
-            <div class="flex flex-col">
-                <img src="{{ url('img/svg/woonkamer/people.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 2'">
-                <p class="text-center">6</p>
-            </div>
-            <img src="{{ url('img/svg/woonkamer/netflix.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 3'">
-            <img src="{{ url('img/svg/woonkamer/internet.svg') }}" class="h-10 w-10" alt="" @click="name = 'specific name 4'">
-            <div class="flex items-center h-10">
-                <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
-                <img src="{{ url('img/svg/woonkamer/couch.svg') }}" class="h-10 w-10 -mt-1" alt="" @click="name = 'specific name 5'">
-                <img src="{{ url('img/svg/woonkamer/lightning.svg') }}" class="h-3 w-3" alt="">
-            </div>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/woonkamer/sonos.svg" title="Sonos">Lekker knallen met de geweldige geluidsinstallatie die u zelf kunt bedienen via de Sonos app</x-body-icon>
+            <x-body-icon src="img/svg/woonkamer/people.svg" title="6 Personen">Genoeg plek voor de hele familie (6 personen)</x-body-icon>
+            <x-body-icon src="img/svg/woonkamer/netflix.svg" title="Netflix">Genoeg van Portugal gezien? Lekker binge watchen met Netflix dan!</x-body-icon>
+            <x-body-icon src="img/svg/woonkamer/internet.svg" title="IPTV en meer">U kunt alle zenders bekijken. Zelfs Nederlandse!</x-body-icon>
+            <x-body-icon src="img/svg/woonkamer/couch.svg" title="Elektrische bank">Een bank zo comfortabel dat je niet meer terug wilt</x-body-icon>
         </x-body-icons>
-        <input type="text" x-model="name">
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
-{{--    <div x-data="{ name: '' }">--}}
-{{--        <input type="text" x-model="name">--}}
-{{--        <button @click="name = 'specific name 1'">Set Name 1</button>--}}
-{{--        <button @click="name = 'specific name 2'">Set Name 2</button>--}}
-{{--    </div>--}}
 
     <!-- Keuken -->
-    <x-kamer-titel src="stove.svg" kamer="keuken">
-        Keuken
-    </x-kamer-titel>
+    <x-kamer-titel src="stove.svg" kamer="Keuken"/>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/keuken/IMG_1609.jpg</x-first-image>
@@ -77,20 +61,29 @@
         <!-- Item 3 -->
         <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
-    <x-body-icons>
-        <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/oven.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/washing-machine.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/frying-pan.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/fridge.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/cutlery.svg') }}" class="h-10 w-10" alt="">
-    </x-body-icons>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/keuken/dishwasher.svg" title="Vaatwasser">Jaja, er is een vaatwasser aanwezig!</x-body-icon>
+            <x-body-icon src="img/svg/keuken/oven.svg" title="Oven">Waarom uit eten gaan als je gewoon een oven kunt gebruiken?</x-body-icon>
+            <x-body-icon src="img/svg/keuken/washing-machine.svg" title="Wasmachine">Voor de mensen die graag wat langer willen blijven</x-body-icon>
+            <x-body-icon src="img/svg/keuken/frying-pan.svg" title="Fornuis">Naast een oven is er ook een fornuis met meerdere pannen aanwezig</x-body-icon>
+            <x-body-icon src="img/svg/keuken/fridge.svg" title="Koelkast">Geen zorgen, de koelkast is aanwezig</x-body-icon>
+            <x-body-icon src="img/svg/keuken/cutlery.svg" title="Bestek">Voor als papa zich misdraagd</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
+{{--    <x-body-icons>--}}
+{{--        <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">--}}
+{{--        <img src="{{ url('img/svg/keuken/oven.svg') }}" class="h-10 w-10" alt="">--}}
+{{--        <img src="{{ url('img/svg/keuken/washing-machine.svg') }}" class="h-10 w-10" alt="">--}}
+{{--        <img src="{{ url('img/svg/keuken/frying-pan.svg') }}" class="h-10 w-10" alt="">--}}
+{{--        <img src="{{ url('img/svg/keuken/fridge.svg') }}" class="h-10 w-10" alt="">--}}
+{{--        <img src="{{ url('img/svg/keuken/cutlery.svg') }}" class="h-10 w-10" alt="">--}}
+{{--    </x-body-icons>--}}
 
 
     <!-- Slaapkamers -->
-    <x-kamer-titel src="bed.svg" kamer="slaapkamers">
-        Slaapkamers
-    </x-kamer-titel>
+    <x-kamer-titel src="bed.svg" kamer="Slaapkamers"/>
     <h1 class="text-2xl ml-2 font-bold my-2">Voorzijde</h1>
     <x-image-slider>
         <!-- Item 1 -->
@@ -141,7 +134,5 @@
 
 
     <!-- Badkamers -->
-    <x-kamer-titel src="shower.svg" kamer="badkamers">
-        Badkamers
-    </x-kamer-titel>
+    <x-kamer-titel src="shower.svg" kamer="Badkamers"/>
 </x-app-layout>
