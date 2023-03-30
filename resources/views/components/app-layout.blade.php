@@ -19,7 +19,7 @@
 {{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
 
     <!-- Styles -->
-    @livewireStyles
+{{--    @livewireStyles--}}
 
 </head>
 <body>
@@ -38,7 +38,7 @@
             </div>
 
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    @livewireScripts
+{{--    @livewireScripts--}}
     </div>
 </body>
 </html>
