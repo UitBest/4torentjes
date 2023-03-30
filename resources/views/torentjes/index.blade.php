@@ -72,15 +72,6 @@
         </x-body-icons>
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
-{{--    <x-body-icons>--}}
-{{--        <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">--}}
-{{--        <img src="{{ url('img/svg/keuken/oven.svg') }}" class="h-10 w-10" alt="">--}}
-{{--        <img src="{{ url('img/svg/keuken/washing-machine.svg') }}" class="h-10 w-10" alt="">--}}
-{{--        <img src="{{ url('img/svg/keuken/frying-pan.svg') }}" class="h-10 w-10" alt="">--}}
-{{--        <img src="{{ url('img/svg/keuken/fridge.svg') }}" class="h-10 w-10" alt="">--}}
-{{--        <img src="{{ url('img/svg/keuken/cutlery.svg') }}" class="h-10 w-10" alt="">--}}
-{{--    </x-body-icons>--}}
-
 
     <!-- Slaapkamers -->
     <x-kamer-titel src="bed.svg" kamer="Slaapkamers"/>
@@ -93,11 +84,9 @@
     </x-image-slider>
     <div x-data="{ descriptionSVG: '' }">
         <x-body-icons>
-            <x-body-icon src="img/svg/woonkamer/sonos.svg" title="Sonos">Lekker knallen met de geweldige geluidsinstallatie die u zelf kunt bedienen via de Sonos app</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/people.svg" title="6 Personen">Genoeg plek voor de hele familie (6 personen)</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/netflix.svg" title="Netflix">Genoeg van Portugal gezien? Lekker binge watchen met Netflix dan!</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/internet.svg" title="IPTV en meer">U kunt alle zenders bekijken. Zelfs Nederlandse!</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/couch.svg" title="Elektrische bank">Een bank zo comfortabel dat je niet meer terug wilt</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
         </x-body-icons>
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
@@ -105,36 +94,80 @@
     <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Master</h1>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
-        <!-- Item 2 -->
-        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
+        <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
-    <x-body-icons>
-        <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/oven.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/washing-machine.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/frying-pan.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/fridge.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/cutlery.svg') }}" class="h-10 w-10" alt="">
-    </x-body-icons>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
 
     <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Achter</h1>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
-        <!-- Item 2 -->
-        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
+        <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
-    <x-body-icons>
-        <img src="{{ url('img/svg/keuken/dishwasher.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/oven.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/washing-machine.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/frying-pan.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/fridge.svg') }}" class="h-10 w-10" alt="">
-        <img src="{{ url('img/svg/keuken/cutlery.svg') }}" class="h-10 w-10" alt="">
-    </x-body-icons>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
 
 
     <!-- Badkamers -->
     <x-kamer-titel src="shower.svg" kamer="Badkamers"/>
+    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Master</h1>
+    <x-image-slider>
+        <!-- Item 1 -->
+        <x-first-image>img/svg/no-picture.svg</x-first-image>
+    </x-image-slider>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
+
+    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Achter</h1>
+    <x-image-slider>
+        <!-- Item 1 -->
+        <x-first-image>img/badkamers/IMG_1565.jpg</x-first-image>
+        <!-- Item 2 -->
+        <x-image>img/badkamers/IMG_1566.jpg</x-image>
+    </x-image-slider>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
+
+    <!-- Achtertuin -->
+    <x-kamer-titel src="pool.svg" kamer="Achtertuin"/>
+    <x-image-slider>
+        <!-- Item 1 -->
+        <x-first-image>img/achtertuin/WLTM0247.jpg</x-first-image>
+        <!-- Item 2 -->
+        <x-image>img/achtertuin/IMG_1594.jpg</x-image>
+        <!-- Item 3 -->
+        <x-image>img/achtertuin/IMG_1592.jpg</x-image>
+    </x-image-slider>
+    <div x-data="{ descriptionSVG: '' }">
+        <x-body-icons>
+            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
+            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+        </x-body-icons>
+        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    </div>
 </x-app-layout>
