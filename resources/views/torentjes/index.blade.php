@@ -48,7 +48,8 @@
             <x-body-icon src="img/svg/woonkamer/internet.svg" title="IPTV en meer">U kunt alle zenders bekijken. Zelfs Nederlandse!</x-body-icon>
             <x-body-icon src="img/svg/woonkamer/couch.svg" title="Elektrische bank">Een bank zo comfortabel dat je niet meer terug wilt</x-body-icon>
         </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+{{--        <p @click="descriptionSVG = ''" x-text="descriptionSVG"/>--}}
+        <x-description-s-v-g></x-description-s-v-g>
     </div>
 
     <!-- Keuken -->
