@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="">
         <div class="">
-            <img src="{{ url('img/Torentjes.jpeg') }}">
-            <div class="-top-14 text-center relative z-10">
+            <img src="{{ url('img/Torentjes.jpeg') }}" class="w-full">
+            <div class="-top-16 text-center relative z-10">
                 <h1 class="bg-gray-500 opacity-75 text-white text-4xl">As Quatro Torrenzinhas</h1>
             </div>
         </div>
@@ -75,7 +75,7 @@
 
     <!-- Slaapkamers -->
     <x-kamer-titel src="bed.svg" kamer="Slaapkamers"/>
-    <h1 class="text-2xl ml-2 font-bold my-2">Voorzijde</h1>
+    <x-kamer-subtitel>Voorzijde</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
@@ -91,7 +91,7 @@
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
 
-    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Master</h1>
+    <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
@@ -105,7 +105,7 @@
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
 
-    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Achter</h1>
+    <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
@@ -122,21 +122,21 @@
 
     <!-- Badkamers -->
     <x-kamer-titel src="shower.svg" kamer="Badkamers"/>
-    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Master</h1>
+    <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
     <div x-data="{ descriptionSVG: '' }">
         <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/shower.svg" title="Douche">Lekker douchen</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/bath.svg" title="Bad">Niet gemaakt voor hydrofluoric acid</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/sink.svg" title="Wasbak">Wel gemaakt om je handen te wassen</x-body-icon>
         </x-body-icons>
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
 
-    <h1 class="text-2xl ml-2 font-bold mt-12 mb-2">Achter</h1>
+    <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
         <x-first-image>img/badkamers/IMG_1565.jpg</x-first-image>
@@ -145,9 +145,9 @@
     </x-image-slider>
     <div x-data="{ descriptionSVG: '' }">
         <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/shower.svg" title="Douche">Lekker douchen</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/bath.svg" title="Bad">Niet gemaakt voor hydrofluoric acid</x-body-icon>
+            <x-body-icon src="img/svg/badkamers/sink.svg" title="Wasbak">Wel gemaakt om je handen te wassen</x-body-icon>
         </x-body-icons>
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
