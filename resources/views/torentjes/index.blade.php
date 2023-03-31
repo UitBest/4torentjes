@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app>
     <div class="">
         <div class="">
             <img src="{{ url('img/Torentjes.jpeg') }}" class="w-full">
@@ -171,4 +171,4 @@
         </x-body-icons>
         <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
     </div>
-</x-app-layout>
+</x-app>

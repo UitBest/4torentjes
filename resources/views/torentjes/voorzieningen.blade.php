@@ -1,3 +1,4 @@
-<x-app-layout>
-    <p class="text-red-500">Voorzieningen</p>
-</x-app-layout>
+<x-app>
+    <h1 class="px-5 text-4xl mt-5 mb-10 font-['Montserrat']">Voorzieningen</h1>
+
+</x-app>

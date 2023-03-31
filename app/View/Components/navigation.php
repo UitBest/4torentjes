@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class navigation-menu extends Component
+class navigation extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class navigation-menu extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navigation-menu');
+        return view('layouts.navigation');
     }
 }
