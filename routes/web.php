@@ -19,6 +19,6 @@ Route::get('/kamers', [TorentjesController::class, 'kamers'])->name('torentjes.k
 Route::get('/voorzieningen', [TorentjesController::class, 'voorzieningen'])->name('torentjes.voorzieningen');
 Route::get('/contact', [TorentjesController::class, 'contact'])->name('torentjes.contact');
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

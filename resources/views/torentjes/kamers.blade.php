@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h1 class="px-5 text-4xl font-thin mt-5 mb-10">Alle kamers</h1>
+    <h1 class="px-5 text-4xl mt-5 mb-10 font-['Montserrat']">Alle kamers</h1>
 
     <x-room-options kamer="Woonkamer" src="img/svg/television.svg"/>
     <x-room-options kamer="Keuken" src="img/svg/stove.svg"/>
