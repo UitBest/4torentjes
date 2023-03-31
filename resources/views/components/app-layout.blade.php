@@ -15,7 +15,7 @@
 
     <!-- scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
-{{--    <script src="https://cdn.tailwindcss.com"></script>--}}
+    <script src="https://cdn.tailwindcss.com"></script>
 {{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
 
     <!-- Styles -->
@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic" style="font-family: 'Bodoni MT';">
+        <div class="sm:bg-[#f3eed8] bg-[#E9E1B9] min-h-screen italic font-['Times_New_Roman']">
             <x-navigation-menu/>
             <main>
                 <div class="sm:py-12">
