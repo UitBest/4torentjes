@@ -39,6 +39,20 @@
         <!-- Item 3 -->
         <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
+    <div x-data="{ show: true }" class="flex items-center justify-center mt-2 text-lg">
+        <template  x-if="!show">
+            <button @click="show = !show" class="text-blue-500 hover:text-blue-700">
+                <img src="{{ asset('img/svg/information.svg') }}" class="w-5 h-5">
+            </button>
+        </template>
+
+        <template x-if="show">
+            <div class="ml-4 flex items-center justify-center">
+                <p>Klik op de icoontjes voor meer informatie.</p>
+                <button @click="show = false" class="h-10 w-10"><img src="{{ asset('img/svg/cross.svg') }}"></button>
+            </div>
+        </template>
+    </div>
     <div class="" x-data="{ activeButton: null, buttons: [
             { text: 'Familie ruzie? Knal de bass de erdoorheen!', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Genoeg plek voor de hele familie (6 personen), tenzij je Mexicaans bent', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
