@@ -39,17 +39,14 @@
         <!-- Item 3 -->
         <x-image>img/woonkamer/IMG_1551.jpg</x-image>
     </x-image-slider>
-
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/woonkamer/sonos.svg" title="Sonos">Familie ruzie? Knal de bass de erdoorheen!</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/people.svg" title="6 Personen">Genoeg plek voor de hele familie (6 personen), tenzij je Mexicaans bent</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/netflix.svg" title="Netflix">Genoeg van Portugal gezien? Lekker binge watchen met Netflix dan!</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/internet.svg" title="IPTV en meer">U kunt alle zenders bekijken. Zelfs porno!</x-body-icon>
-            <x-body-icon src="img/svg/woonkamer/couch.svg" title="Elektrische bank">Een bank zo comfortabel dat je niet meer terug wilt</x-body-icon>
-        </x-body-icons>
-{{--        <p @click="descriptionSVG = ''" x-text="descriptionSVG"/>--}}
-        <x-description-s-v-g></x-description-s-v-g>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Familie ruzie? Knal de bass de erdoorheen!', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg plek voor de hele familie (6 personen), tenzij je Mexicaans bent', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg van Portugal gezien? Lekker binge watchen met Netflix dan!', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'U kunt alle zenders bekijken. Zelfs porno!', image: '{{ asset('img/svg/woonkamer/internet.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Een bank zo comfortabel dat je niet meer terug wilt', image: '{{ asset('img/svg/woonkamer/couch.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <!-- Keuken -->
@@ -62,16 +59,15 @@
         <!-- Item 3 -->
         <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/keuken/dishwasher.svg" title="Vaatwasser">Jaja, er is een vaatwasser aanwezig!</x-body-icon>
-            <x-body-icon src="img/svg/keuken/oven.svg" title="Oven">Waarom uit eten gaan als je gewoon een oven kunt gebruiken? Jank die lasange er maar in</x-body-icon>
-            <x-body-icon src="img/svg/keuken/washing-machine.svg" title="Wasmachine">Om de bloedvlekken uit je kleren te wassen</x-body-icon>
-            <x-body-icon src="img/svg/keuken/frying-pan.svg" title="Fornuis">Naast een oven is er ook een fornuis met meerdere pannen aanwezig</x-body-icon>
-            <x-body-icon src="img/svg/keuken/fridge.svg" title="Koelkast">Genoeg plek in de koelkast voor 3 kratten bier</x-body-icon>
-            <x-body-icon src="img/svg/keuken/cutlery.svg" title="Bestek">Voor als papa zich misdraagd</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Jaja, er is een vaatwasser aanwezig!', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Waarom uit eten gaan als je gewoon een oven kunt gebruiken? Gooi die lasange er maar in', image: '{{ asset('img/svg/keuken/oven.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Om de bloedvlekken uit je kleren te wassen', image: '{{ asset('img/svg/keuken/washing-machine.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Naast een oven is er ook een fornuis met meerdere pannen aanwezig', image: '{{ asset('img/svg/keuken/frying-pan.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg plek in de koelkast voor 3 kratten bier', image: '{{ asset('img/svg/keuken/fridge.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Voor als papa zich misdraagd', image: '{{ asset('img/svg/keuken/cutlery.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <!-- Slaapkamers -->
@@ -83,13 +79,12 @@
         <!-- Item 2 -->
         <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed met vlekken bah bah</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Zo'n mooie uitkijk dat je bekant een zenuwinzinking krijgt</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Een heel queen size bed met vlekken bah bah', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg plek om licha... kleding in te stoppen!', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Zon mooie uitkijk dat je bekant een zenuwinzinking krijgt', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <x-kamer-subtitel>Master</x-kamer-subtitel>
@@ -97,13 +92,12 @@
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed met vlekken bah bah</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Zo'n mooie uitkijk dat je bekant een zenuwinzinking krijgt</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Een heel queen size bed met vlekken bah bah', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg plek om licha... kleding in te stoppen!', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Zon mooie uitkijk dat je bekant een zenuwinzinking krijgt', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
@@ -111,13 +105,12 @@
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed met vlekken bah bah</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Zo'n mooie uitkijk dat je bekant een zenuwinzinking krijgt</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Een heel queen size bed met vlekken bah bah', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Genoeg plek om licha... kleding in te stoppen!', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Zon mooie uitkijk dat je bekant een zenuwinzinking krijgt', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
 
@@ -128,13 +121,12 @@
         <!-- Item 1 -->
         <x-first-image>img/svg/no-picture.svg</x-first-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/badkamers/shower.svg" title="Douche">Lekker douchen</x-body-icon>
-            <x-body-icon src="img/svg/badkamers/bath.svg" title="Bad">Niet gemaakt voor hydrofluoric acid</x-body-icon>
-            <x-body-icon src="img/svg/badkamers/sink.svg" title="Wasbak">Wel gemaakt om je handen te wassen</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
@@ -144,13 +136,12 @@
         <!-- Item 2 -->
         <x-image>img/badkamers/IMG_1566.jpg</x-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/badkamers/shower.svg" title="Douche">Lekker douchen</x-body-icon>
-            <x-body-icon src="img/svg/badkamers/bath.svg" title="Bad">Niet gemaakt voor hydrofluoric acid</x-body-icon>
-            <x-body-icon src="img/svg/badkamers/sink.svg" title="Wasbak">Wel gemaakt om je handen te wassen</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 
     <!-- Achtertuin -->
@@ -163,12 +154,11 @@
         <!-- Item 3 -->
         <x-image>img/achtertuin/IMG_1592.jpg</x-image>
     </x-image-slider>
-    <div x-data="{ descriptionSVG: '' }">
-        <x-body-icons>
-            <x-body-icon src="img/svg/slaapkamers/bed.svg" title="Bed">Een heel queen size bed</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/kast.svg" title="Kast">Genoeg plek om licha... kleding in te stoppen!</x-body-icon>
-            <x-body-icon src="img/svg/slaapkamers/raam.svg" title="Raam">Mooie uitkijk op de voortuin</x-body-icon>
-        </x-body-icons>
-        <p @click="descriptionSVG = ''" x-text="descriptionSVG" class="mx-4 min-h-0 transition-all ease-in-out duration-[600ms] w-full bg-transparent text-center italic text-4xl mt-10"/>
+    <div class="" x-data="{ activeButton: null, buttons: [
+            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            ] }">
+        <x-body-icon></x-body-icon>
     </div>
 </x-app>
