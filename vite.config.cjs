@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import postcss from 'rollup-plugin-postcss';
 
 export default defineConfig({
     plugins: [
@@ -8,7 +9,7 @@ export default defineConfig({
             input: [
                 'resources/sass/app.scss',
                 'resources/css/app.css',
-                'resources/js/app.js',
+                'resources/js/app.cjs',
             ],
             refresh: true,
         }),
@@ -20,10 +21,14 @@ export default defineConfig({
                 },
             },
         }),
+        postcss()
     ],
     resolve: {
         alias: {
             vue: 'vue/dist/vue.esm-bundler.js',
         },
+    },
+    optimizeDeps: {
+        include: ['dependency'],
     },
 });

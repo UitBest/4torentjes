@@ -14,9 +14,9 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.cjs', 'resources/css/app.css'])
     <script src="https://cdn.tailwindcss.com"></script>
-{{--    <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>--}}
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- Styles -->
 {{--    @livewireStyles--}}
@@ -37,7 +37,7 @@
             </main>
             </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+{{--        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>--}}
 {{--    @livewireScripts--}}
     </div>
 </body>
