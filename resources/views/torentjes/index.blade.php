@@ -8,7 +8,7 @@
         </div>
     </div>
     <x-body-text class="mb-14">
-        Deze site geeft u allerlei informatie over het gebruik van de bungalow en biedt u nuttige tips voor een aangenaam verblijf in de zuidelijke provincie Algarve. Indien u deze info doorleest dan worden veel vragen beantwoord.
+        Geniet van de zon, de zee en de cultuur in een comfortabel en gezellig huisje. Of je nu op zoek bent naar rust, avontuur of romantiek, er is voor ieder wat wils. Ontdek de mooiste plekjes van Portugal en voel je thuis in het huisje.
     </x-body-text>
     <x-image-slider>
         <x-first-image>img/IMG_1599.jpg</x-first-image>
@@ -16,16 +16,13 @@
         <x-image>img/voorzijde2.jpeg</x-image>
     </x-image-slider>
     <x-body-text class="mt-14 mb-7">
-        Wij verzoeken u in ieder geval hoofdstukken 3, 4 en 5 door te nemen, zodat het huis veilig en schoon wordt achtergelaten en gereed is voor als wij zelf terugkomen.
+        In het handboekje vind je tips en informatie over het huis en de omgeving. Lees alsjeblieft hoofdstukken 3, 4 en 5 om het huis netjes en veilig te houden en klaar te maken voor onze terugkomst.
     </x-body-text>
     <x-body-text class="my-7">
-        Informatie alsmede opmerkingen over het huis kunt u doorgeven aan Will Cuijpers (0031-6 53 33 11 74 / will@cuijpers.st).
+        We hopen dat je je helemaal thuis voelt in ons huisje in Portugal! We vertrouwen erop dat je er net zo zuinig op bent als wij. Geniet van je verblijf en laat het ons weten als je iets nodig hebt!
     </x-body-text>
     <x-body-text class="my-7">
-        Wij wensen u een aangenaam verblijf en vertrouwen er op dat u de bungalow en de aanwezige spullen op een even nette wijze gebruikt als bij u thuis.
-    </x-body-text>
-    <x-body-text class="my-7">
-        Hebt u tips over bezienswaardigheden, restaurants, winkels enz. dan horen wij dat graag van u.
+        Portugal heeft zoveel te bieden! We zijn benieuwd wat jij allemaal hebt ontdekt. Heb je tips voor ons over bezienswaardigheden, restaurants, winkels enz.? Laat het ons weten! Zo kunnen we ons huisje en onze service nog beter maken!
     </x-body-text>
 
 
@@ -54,11 +51,11 @@
         </template>
     </div>
     <div class="" x-data="{ activeButton: null, buttons: [
-            { text: 'Familie ruzie? Knal de bass de erdoorheen!', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Genoeg plek voor de hele familie (6 personen), tenzij je Mexicaans bent', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Genoeg van Portugal gezien? Lekker binge watchen met Netflix dan!', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'U kunt alle zenders bekijken. Zelfs porno!', image: '{{ asset('img/svg/woonkamer/internet.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Een bank zo comfortabel dat je niet meer terug wilt', image: '{{ asset('img/svg/woonkamer/couch.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Speel je favoriete muziek, podcasts of radiozenders af in het huisje. Het huisje heeft een Sonos speaker in de woonkamer voor een geweldig geluid en een makkelijke bediening.', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'De woonkamer van het huisje is ruim en gezellig. Er is plek voor 6 personen om te zitten en te relaxen. Je kunt op de bank hangen, een spelletje spelen of van het uitzicht genieten.', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Het huisje heeft een Netflix-abonnement, zodat je altijd iets leuks kunt vinden om te kijken.', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Het huisje heeft een IPTV box waarmee je alle zenders van de wereld kunt streamen. Van nieuws tot sport, van muziek tot cultuur, je kunt altijd iets interessants of vermakelijks vinden om te kijken. Met de IPTV box kun je de wereld in je woonkamer halen. 🌎', image: '{{ asset('img/svg/woonkamer/internet.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Of je nu wilt lezen, slapen of tv kijken, de elektrische bank past zich aan jouw wensen aan.', image: '{{ asset('img/svg/woonkamer/couch.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             ] }">
         <x-body-icon></x-body-icon>
     </div>
@@ -74,12 +71,12 @@
         <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
-            { text: 'Jaja, er is een vaatwasser aanwezig!', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Waarom uit eten gaan als je gewoon een oven kunt gebruiken? Gooi die lasange er maar in', image: '{{ asset('img/svg/keuken/oven.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Om de bloedvlekken uit je kleren te wassen', image: '{{ asset('img/svg/keuken/washing-machine.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Naast een oven is er ook een fornuis met meerdere pannen aanwezig', image: '{{ asset('img/svg/keuken/frying-pan.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Genoeg plek in de koelkast voor 3 kratten bier', image: '{{ asset('img/svg/keuken/fridge.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Voor als papa zich misdraagd', image: '{{ asset('img/svg/keuken/cutlery.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Je hoeft je geen zorgen te maken over de afwas, want het huisje heeft een vaatwasser.', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Je kunt ook heerlijke gerechten bereiden in de oven, die verschillende standen heeft.', image: '{{ asset('img/svg/keuken/oven.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Je kleding blijft schoon en fris dankzij de wasmachine, die zuinig en stil is. ', image: '{{ asset('img/svg/keuken/washing-machine.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Als je liever zelf kookt, kun je gebruik maken van het fornuis. ', image: '{{ asset('img/svg/keuken/frying-pan.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Je eten en drinken kun je bewaren in de koelkast. Met de koelkast kun je altijd iets lekkers in huis hebben. ', image: '{{ asset('img/svg/keuken/fridge.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Ten slotte kun je genieten van je maaltijden met het bestek.', image: '{{ asset('img/svg/keuken/cutlery.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             ] }">
         <x-body-icon></x-body-icon>
     </div>
