@@ -1,9 +1,9 @@
 <x-app>
     <div class="">
         <div class="">
-            <img src="{{ url('img/Torentjes.jpeg') }}" class="w-full">
-            <div class="-top-16 text-center relative z-10">
-                <h1 class="bg-gray-500 opacity-75 text-white text-4xl">As Quatro Torrenzinhas</h1>
+            <img src="{{ url('img/Torentjes.jpeg') }}" class="w-full saturate-150">
+            <div class="-top-[38rem] text-center relative z-10">
+                <h1 class=" text-white text-4xl">As Quatro Torrenzinhas</h1>
             </div>
         </div>
     </div>
@@ -11,9 +11,9 @@
         Geniet van de zon, de zee en de cultuur in een comfortabel en gezellig huisje. Of je nu op zoek bent naar rust, avontuur of romantiek, er is voor ieder wat wils. Ontdek de mooiste plekjes van Portugal en voel je thuis in het huisje.
     </x-body-text>
     <x-image-slider>
-        <x-first-image>img/IMG_1599.jpg</x-first-image>
-        <x-image>img/Torentjes.jpeg</x-image>
-        <x-image>img/voorzijde2.jpeg</x-image>
+        <x-first-image>img/ZwembadMetWijn.jpg</x-first-image>
+        <x-image>img/ZwembadMetWijn2.jpg</x-image>
+        <x-image>img/ZwembadMetPlanten.jpg</x-image>
     </x-image-slider>
     <x-body-text class="mt-14 mb-7">
         In het handboekje vind je tips en informatie over het huis en de omgeving. Lees alsjeblieft hoofdstukken 3, 4 en 5 om het huis netjes en veilig te houden en klaar te maken voor onze terugkomst.
@@ -30,11 +30,11 @@
     <x-kamer-titel src="television.svg" kamer="Woonkamer"/>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/woonkamer/IMG_1550.jpg</x-first-image>>
+        <x-first-image>img/woonkamer/IMG_4163.jpg</x-first-image>>
         <!-- Item 2 -->
-        <x-image>img/woonkamer/IMG_1549.jpg</x-image>
+        <x-image>img/woonkamer/IMG_4164.jpg</x-image>
         <!-- Item 3 -->
-        <x-image>img/woonkamer/IMG_1551.jpg</x-image>
+        <x-image>img/woonkamer/IMG_4169.jpg</x-image>
     </x-image-slider>
     <div x-data="{ show: true }" class="flex items-center justify-center mt-2 text-lg">
         <template  x-if="!show">

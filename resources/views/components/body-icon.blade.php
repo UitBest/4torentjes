@@ -7,5 +7,5 @@
     </template>
 </div>
 <div x-show="activeButton !== null" class="mt-2 flex items-center justify-center transition duration-[250ms] ease-in-out">
-    <span x-text="buttons[activeButton].text" class="text-4xl text-center"></span>
+    <span x-text="buttons[activeButton].text" class="text-3xl text-center mx-10 sm:mx-20"></span>
 </div>
