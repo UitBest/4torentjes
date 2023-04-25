@@ -8,21 +8,28 @@
         </div>
     </div>
     <x-body-text class="mb-14">
-        Geniet van de zon, de zee en de cultuur in een comfortabel en gezellig huisje. Of je nu op zoek bent naar rust, avontuur of romantiek, er is voor ieder wat wils. Ontdek de mooiste plekjes van Portugal en voel je thuis in het huisje.
+        Geniet van de zon, de zee en de cultuur in een comfortabel en gezellige bungalow. Of je nu op zoek bent naar rust, avontuur of romantiek, er is voor ieder wat wils. Ontdek de mooiste plekjes van Portugal en voel je thuis in onze bungalow.
     </x-body-text>
     <x-image-slider>
         <x-first-image>img/ZwembadMetWijn.jpg</x-first-image>
         <x-image>img/ZwembadMetWijn2.jpg</x-image>
         <x-image>img/ZwembadMetPlanten.jpg</x-image>
+        <x-image>img/ZwembadMetParasol.jpg</x-image>
+        <x-image>img/Bloemetjes.jpg</x-image>
+        <x-image>img/Plant.jpg</x-image>
+        <x-image>img/BoomMetCitroen.jpg</x-image>
+        <x-image>img/Zwembad.jpg</x-image>
+        <x-image>img/Zwembad2.jpg</x-image>
+
     </x-image-slider>
     <x-body-text class="mt-14 mb-7">
-        In het handboekje vind je tips en informatie over het huis en de omgeving. Lees alsjeblieft hoofdstukken 3, 4 en 5 om het huis netjes en veilig te houden en klaar te maken voor onze terugkomst.
+        In het handboekje vind je tips en informatie over de bungalow en de omgeving. Lees alsjeblieft hoofdstukken 3, 4 en 5 om de bungalow netjes en veilig te houden en klaar te maken voor onze terugkomst.
     </x-body-text>
     <x-body-text class="my-7">
-        We hopen dat je je helemaal thuis voelt in ons huisje in Portugal! We vertrouwen erop dat je er net zo zuinig op bent als wij. Geniet van je verblijf en laat het ons weten als je iets nodig hebt!
+        We hopen dat je je helemaal thuis voelt in onze bungalow in Portugal! We vertrouwen erop dat je er net zo zuinig op bent als wij. Geniet van je verblijf en laat het ons weten als je iets nodig hebt!
     </x-body-text>
     <x-body-text class="my-7">
-        Portugal heeft zoveel te bieden! We zijn benieuwd wat jij allemaal hebt ontdekt. Heb je tips voor ons over bezienswaardigheden, restaurants, winkels enz.? Laat het ons weten! Zo kunnen we ons huisje en onze service nog beter maken!
+        Portugal heeft zoveel te bieden! We zijn benieuwd wat jij hebt ontdekt. Heb je tips voor ons over bezienswaardigheden, restaurants, winkels enz.? Laat het ons weten door het in het gastenboek te schrijven! Zo kunnen we onze bungalow en onze service nog beter maken!
     </x-body-text>
 
 
@@ -51,11 +58,11 @@
         </template>
     </div>
     <div class="" x-data="{ activeButton: null, buttons: [
-            { text: 'Speel je favoriete muziek, podcasts of radiozenders af in het huisje. Het huisje heeft een Sonos speaker in de woonkamer voor een geweldig geluid en een makkelijke bediening.', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'De woonkamer van het huisje is ruim en gezellig. Er is plek voor 6 personen om te zitten en te relaxen. Je kunt op de bank hangen, een spelletje spelen of van het uitzicht genieten.', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Het huisje heeft een Netflix-abonnement, zodat je altijd iets leuks kunt vinden om te kijken.', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Het huisje heeft een IPTV box waarmee je alle zenders van de wereld kunt streamen. Van nieuws tot sport, van muziek tot cultuur, je kunt altijd iets interessants of vermakelijks vinden om te kijken. Met de IPTV box kun je de wereld in je woonkamer halen. 🌎', image: '{{ asset('img/svg/woonkamer/internet.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Of je nu wilt lezen, slapen of tv kijken, de elektrische bank past zich aan jouw wensen aan.', image: '{{ asset('img/svg/woonkamer/couch.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Speel je favoriete muziek, podcasts of radiozenders af in de bungalow. De bungalow heeft een Sonos speaker in de woonkamer en het terras voor een geweldig geluid en een makkelijke bediening.', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'De woonkamer van de bungalow is ruim en gezellig. Er is plek voor 6 personen om te zitten en te relaxen. Je kunt op de bank hangen, een spelletje spelen of van het uitzicht genieten.', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'De bungalow heeft een Netflix-abonnement, zodat je altijd iets leuks kunt vinden om te kijken.', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'De bungalow heeft een IPTV box waarmee je alle zenders van de wereld kunt streamen. Van nieuws tot sport, van muziek tot cultuur, je kunt altijd iets interessants of vermakelijks vinden om te kijken. Met de IPTV box kun je de wereld in je woonkamer halen. 🌎', image: '{{ asset('img/svg/woonkamer/internet.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Of je nu wilt lezen, slapen of tv kijken, de elektrisch verstelbare bank past zich aan jouw wensen aan.', image: '{{ asset('img/svg/woonkamer/couch.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             ] }">
         <x-body-icon></x-body-icon>
     </div>
@@ -71,7 +78,7 @@
         <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
-            { text: 'Je hoeft je geen zorgen te maken over de afwas, want het huisje heeft een vaatwasser.', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+            { text: 'Je hoeft je geen zorgen te maken over de afwas want er is een vaatwasser in de keuken aanwezig.', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Je kunt ook heerlijke gerechten bereiden in de oven, die verschillende standen heeft.', image: '{{ asset('img/svg/keuken/oven.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Je kleding blijft schoon en fris dankzij de wasmachine, die zuinig en stil is. ', image: '{{ asset('img/svg/keuken/washing-machine.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Als je liever zelf kookt, kun je gebruik maken van het fornuis. ', image: '{{ asset('img/svg/keuken/frying-pan.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -158,12 +165,21 @@
     <!-- Achtertuin -->
     <x-kamer-titel src="pool.svg" kamer="Achtertuin"/>
     <x-image-slider>
-        <!-- Item 1 -->
-        <x-first-image>img/achtertuin/WLTM0247.jpg</x-first-image>
-        <!-- Item 2 -->
-        <x-image>img/achtertuin/IMG_1594.jpg</x-image>
-        <!-- Item 3 -->
-        <x-image>img/achtertuin/IMG_1592.jpg</x-image>
+        <x-first-image>img/achtertuin/IMG_4180.jpg</x-first-image>
+        <x-image>img/achtertuin/IMG_4160.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4171.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4174.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4176.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4177.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4178.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4181.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4182.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4183.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4184.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4196.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4199.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4202.jpg</x-image>
+        <x-image>img/achtertuin/IMG_4204.jpg</x-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
             { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
