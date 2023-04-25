@@ -3,6 +3,6 @@
     data-te-carousel-item>
     <img
         src="{{ $slot }}"
-        class="block w-full object-cover @if($slot == 'img/svg/no-picture.svg') w-96 h-96 mx-auto @else h-[600px] sm:h-[700px] @endif"
+        class="block w-full object-cover h-[300px] sm:h-[600px] sm:h-[700px]"
         alt="Wild Landscape" />
 </div>

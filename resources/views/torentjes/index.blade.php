@@ -101,7 +101,7 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/svg/no-picture.svg</x-first-image>
+        <x-first-image>img/svg/cross.svg</x-first-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
             { text: 'Een heel queen size bed met vlekken bah bah', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -114,7 +114,7 @@
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/svg/no-picture.svg</x-first-image>
+        <x-first-image>img/svg/cross.svg</x-first-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
             { text: 'Een heel queen size bed met vlekken bah bah', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -130,7 +130,7 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/svg/no-picture.svg</x-first-image>
+        <x-first-image>img/svg/cross.svg</x-first-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: null, buttons: [
             { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
