@@ -14,12 +14,12 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- scripts -->
-        @vite(['resources/sass/app.scss', 'resources/js/app.cjs', 'resources/css/app.css'])
+{{--        @vite(['resources/sass/app.scss', 'resources/js/app.cjs', 'resources/css/app.css'])--}}
         <script src="https://cdn.tailwindcss.com"></script>
-    {{--    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>--}}
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <!-- Styles -->
-    {{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />--}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
         @livewireStyles
 
     </head>
@@ -37,7 +37,7 @@
                     </div>
                 </main>
             </div>
-    {{--        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>--}}
+            <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         @livewireScripts
         </div>
     </body>

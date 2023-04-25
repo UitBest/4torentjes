@@ -30,11 +30,11 @@
     <x-kamer-titel src="television.svg" kamer="Woonkamer"/>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/woonkamer/IMG_4163.jpg</x-first-image>>
+        <x-first-image>img/woonkamer/IMG_4162.jpg</x-first-image>>
         <!-- Item 2 -->
         <x-image>img/woonkamer/IMG_4164.jpg</x-image>
         <!-- Item 3 -->
-        <x-image>img/woonkamer/IMG_4169.jpg</x-image>
+        <x-image>img/woonkamer/IMG_4168.jpg</x-image>
     </x-image-slider>
     <div x-data="{ show: true }" class="flex items-center justify-center mt-2 text-lg">
         <template  x-if="!show">
