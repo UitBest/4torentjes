@@ -19,18 +19,18 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css?version=1.0.0" />
         @livewireStyles
 
     </head>
     <body>
         <div id="app"><!--sm:bg-[#f3eed8] -->
-            <div class="bg-[#ffea7e] min-h-screen italic font-['Times_New_Roman'] scroll-smooth">
+            <div class="min-h-screen italic font-['Times_New_Roman'] scroll-smooth" style="background: linear-gradient(180deg, rgba(4,20,84,1) 0%, rgba(255,243,183,1) 13%, rgba(255,243,183,1) 100%);">
                 <x-navigation/>
                 <main>
                     <div class="sm:py-12">
                         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8"><!--bg-[#E9E1B9]-->
-                            <div class="bg-[#fff3b7] overflow-hidden sm:shadow-xl sm:rounded-lg">
+                            <div class="bg-[#fff3b7] overflow-hidden sm:shadow-2xl sm:rounded-lg">
                                 {{ $slot }}
                             </div>
                         </div>
