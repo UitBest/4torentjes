@@ -25,12 +25,12 @@
     </head>
     <body>
         <div id="app"><!--sm:bg-[#f3eed8] -->
-            <div class="min-h-screen italic font-['Times_New_Roman'] scroll-smooth" style="background: linear-gradient(180deg, rgba(4,20,84,1) 0%, rgba(255,243,183,1) 13%, rgba(255,243,183,1) 100%);">
+            <div class="min-h-screen italic font-['Times_New_Roman'] scroll-smooth" @if(request()->routeIs('torentjes.index')) style="background: linear-gradient(180deg, rgba(4,20,84,1) 0%, rgba(255,243,183,1) 13%, rgba(255,243,183,1) 100%);" @else style="background: #E9E1B9" @endif>
                 <x-navigation/>
                 <main>
                     <div class="sm:py-12">
                         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8"><!--bg-[#E9E1B9]-->
-                            <div class="bg-[#fff3b7] overflow-hidden sm:shadow-2xl sm:rounded-lg">
+                            <div class="bg-[#E9E1B9] overflow-hidden sm:shadow-2xl sm:rounded-lg border-gray-400 border-opacity-25 sm:border">
                                 {{ $slot }}
                             </div>
                         </div>

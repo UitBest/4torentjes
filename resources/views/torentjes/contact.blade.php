@@ -19,7 +19,7 @@
                 </div>
                 <div x-show="activeButton !== null" class="mt-2 flex items-center justify-center hover:scale-110 transition duration-[250ms] ease-in-out">
                     <a :href="buttons[activeButton].link">
-                        <button class="text-black py-2 px-4 border-y shadow border-black">
+                        <button class="text-black py-2 px-4 shadow border border-gray-400 border-opacity-50 rounded-md">
                             <span x-text="buttons[activeButton].text"></span>
                         </button>
                     </a>
