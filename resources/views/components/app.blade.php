@@ -7,7 +7,7 @@
         <title>4Torentjes</title>
 
         <!-- Icon -->
-        <link rel="icon" href="{{ url('img/favicon.svg') }}">
+        <link rel="icon" href="{{ asset('img/favicon.svg') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
