@@ -14,15 +14,15 @@
     </x-body-text>
 
     <x-image-slider>
-        <x-image first="true">img/ZwembadMetWijn.jpg</x-image>
-        <x-image>img/ZwembadMetWijn2.jpg</x-image>
-        <x-image>img/ZwembadMetPlanten.jpg</x-image>
-        <x-image>img/ZwembadMetParasol.jpg</x-image>
-        <x-image>img/Bloemetjes.jpg</x-image>
-        <x-image>img/Plant.jpg</x-image>
-        <x-image>img/BoomMetCitroen.jpg</x-image>
-        <x-image>img/Zwembad.jpg</x-image>
-        <x-image>img/Zwembad2.jpg</x-image>
+        <x-single-image first="true">img/ZwembadMetWijn.jpg</x-single-image>
+        <x-single-image>img/ZwembadMetWijn2.jpg</x-single-image>
+        <x-single-image>img/ZwembadMetPlanten.jpg</x-single-image>
+        <x-single-image>img/ZwembadMetParasol.jpg</x-single-image>
+        <x-single-image>img/Bloemetjes.jpg</x-single-image>
+        <x-single-image>img/Plant.jpg</x-single-image>
+        <x-single-image>img/BoomMetCitroen.jpg</x-single-image>
+        <x-single-image>img/Zwembad.jpg</x-single-image>
+        <x-single-image>img/Zwembad2.jpg</x-single-image>
 
     </x-image-slider>
     <x-body-text class="mt-14 mb-7">
@@ -40,9 +40,9 @@
     <x-kamer-titel src="television.svg" kamer="Woonkamer"/>
 
     <x-image-slider>
-        <x-image first="true">img/woonkamer/IMG_4162.jpg</x-image>
-        <x-image>img/woonkamer/IMG_4164.jpg</x-image>
-        <x-image>img/woonkamer/IMG_4168.jpg</x-image>
+        <x-single-image first="true">img/woonkamer/IMG_4162.jpg</x-single-image>
+        <x-single-image>img/woonkamer/IMG_4164.jpg</x-single-image>
+        <x-single-image>img/woonkamer/IMG_4168.jpg</x-single-image>
     </x-image-slider>
 
     <div x-data="{ show: true }" class="flex items-center justify-center mt-2 text-lg">
@@ -74,11 +74,11 @@
     <x-kamer-titel src="stove.svg" kamer="Keuken"/>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-image first="true">img/keuken/IMG_1609.jpg</x-image>
+        <x-single-image first="true">img/keuken/IMG_1609.jpg</x-single-image>
         <!-- Item 2 -->
-        <x-image>img/keuken/IMG_1610.jpg</x-image>
+        <x-single-image>img/keuken/IMG_1610.jpg</x-single-image>
         <!-- Item 3 -->
-        <x-image>img/keuken/IMG_1611.jpg</x-image>
+        <x-single-image>img/keuken/IMG_1611.jpg</x-single-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Je hoeft je geen zorgen te maken over de afwas want er is een vaatwasser in de keuken aanwezig.', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -96,9 +96,9 @@
     <x-kamer-subtitel>Voorzijde</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-image first="true">img/slaapkamers/voorzijde1.jpg</x-image>
+        <x-single-image first="true">img/slaapkamers/voorzijde1.jpg</x-single-image>
         <!-- Item 2 -->
-        <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
+        <x-single-image>img/slaapkamers/voorzijde2.jpg</x-single-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed. ', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -111,7 +111,7 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-image first="true">img/svg/cross.svg</x-image>
+        <x-single-image first="true">img/svg/cross.svg</x-single-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed.', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -124,8 +124,8 @@
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
 
     <x-image-slider>
-        <x-image first="true">img/slaapkamers/achterzijde1.jpeg</x-image>
-        <x-image>img/slaapkamers/achterzijde2.jpeg</x-image>
+        <x-single-image first="true">img/slaapkamers/achterzijde1.jpeg</x-single-image>
+        <x-single-image>img/slaapkamers/achterzijde2.jpeg</x-single-image>
     </x-image-slider>
 
     <div class="" x-data="{ activeButton: 0, buttons: [
@@ -142,33 +142,33 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-image first="true">img/svg/cross.svg</x-image>
+        <x-single-image first="true">img/svg/cross.svg</x-single-image>
     </x-image-slider>
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-image first="true">img/badkamers/IMG_1565.jpg</x-image>
+        <x-single-image first="true">img/badkamers/IMG_1565.jpg</x-single-image>
         <!-- Item 2 -->
-        <x-image>img/badkamers/IMG_1566.jpg</x-image>
+        <x-single-image>img/badkamers/IMG_1566.jpg</x-single-image>
     </x-image-slider>
 
     <!-- Achtertuin -->
     <x-kamer-titel src="pool.svg" kamer="Achtertuin"/>
     <x-image-slider>
-        <x-image first="true">img/achtertuin/IMG_4180.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4160.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4171.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4174.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4176.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4177.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4178.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4181.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4182.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4183.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4184.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4196.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4199.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4202.jpg</x-image>
-        <x-image>img/achtertuin/IMG_4204.jpg</x-image>
+        <x-single-image first="true">img/achtertuin/IMG_4180.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4160.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4171.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4174.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4176.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4177.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4178.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4181.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4182.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4183.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4184.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4196.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4199.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4202.jpg</x-single-image>
+        <x-single-image>img/achtertuin/IMG_4204.jpg</x-single-image>
     </x-image-slider>
 </x-app>

@@ -5,7 +5,7 @@ namespace App\View\Components;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class image extends Component
+class singleImage extends Component
 {
     public function __construct(
         public string $first,
@@ -13,6 +13,6 @@ class image extends Component
 
     public function render(): View
     {
-        return view('components.image');
+        return view('components.single-image');
     }
 }

@@ -15,7 +15,18 @@ module.exports = {
           '4': '4px',
           '6': '6px',
       },
-          extend: {},
+      extend: {
+          keyframes: {
+              expand: {
+                  '0%': { height: '0%' },
+                  '100%': { height: '100%' },
+              },
+              collapse: {
+                  '0%': { height: '100%' },
+                  '100%': { height: '0%' },
+              }
+          },
+      },
   },
   plugins: [
       require("tw-elements/dist/plugin"),
