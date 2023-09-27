@@ -1,11 +1,11 @@
 <x-app>
     <div class="">
-        <div class="">
-            <div class="top-[6rem] text-center relative z-10">
-                <h1 class=" text-white text-2xl sm:text-4xl">As Quatro Torrenzinhas</h1>
+        <div class="flex justify-center">
+            <div class="top-[8rem] md:top-[14rem] text-center absolute z-10">
+                <h1 class=" text-[#fcd51e] text-2xl sm:text-4xl">Casa,<br>As Quatro Torrenzinhas</h1>
             </div>
 
-            <img src="{{ url('img/Torentjes.jpeg') }}" class="-mt-[3rem] w-full saturate-150">
+            <img src="{{ url('img/Torentjes.jpeg') }}" class="w-[100%] saturate-150">
         </div>
     </div>
 
@@ -36,7 +36,7 @@
     </x-body-text>
 
     <!-- Arial -->
-    <x-kamer-titel src="television.svg" kamer="Arial"/>
+    <x-kamer-titel src="television.svg" kamer="Lucht foto's"/>
 
     <x-image-slider>
         <x-single-image first="true">img/arial/arial1.jpg</x-single-image>
@@ -103,9 +103,7 @@
     <x-kamer-titel src="bed.svg" kamer="Slaapkamers"/>
     <x-kamer-subtitel>Voorzijde</x-kamer-subtitel>
     <x-image-slider>
-        <!-- Item 1 -->
         <x-single-image first="true">img/slaapkamers/voorzijde1.jpg</x-single-image>
-        <!-- Item 2 -->
         <x-single-image>img/slaapkamers/voorzijde2.jpg</x-single-image>
     </x-image-slider>
     <div class="" x-data="{ activeButton: 0, buttons: [
@@ -117,10 +115,11 @@
     </div>
 
     <x-kamer-subtitel>Master</x-kamer-subtitel>
-    <x-image-slider>
-        <!-- Item 1 -->
-        <x-single-image first="true">img/svg/cross.svg</x-single-image>
-    </x-image-slider>
+    <x-cross/>
+{{--    <x-image-slider>--}}
+{{--        <x-single-image>img/svg/cross.svg</x-single-image>--}}
+{{--    </x-image-slider>--}}
+
     <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed.', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Voldoende kastruimte voor uw kleding. En uw koffer(s) er bovenop.', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -148,15 +147,13 @@
     <!-- Badkamers -->
     <x-kamer-titel src="shower.svg" kamer="Badkamers"/>
     <x-kamer-subtitel>Master</x-kamer-subtitel>
-    <x-image-slider>
-        <!-- Item 1 -->
-        <x-single-image first="true">img/svg/cross.svg</x-single-image>
-    </x-image-slider>
+    <x-cross/>
+{{--    <x-image-slider>--}}
+{{--        <x-single-image first="true">img/svg/cross.svg</x-single-image>--}}
+{{--    </x-image-slider>--}}
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
-        <!-- Item 1 -->
         <x-single-image first="true">img/badkamers/IMG_1565.jpg</x-single-image>
-        <!-- Item 2 -->
         <x-single-image>img/badkamers/IMG_1566.jpg</x-single-image>
     </x-image-slider>
 
