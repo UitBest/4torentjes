@@ -4,5 +4,6 @@
     data-te-carousel-active>
     <img
         src="{{ $slot }}"
-        class="block w-full object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]"/>
+        class="block w-full object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]"
+    />
 </div>

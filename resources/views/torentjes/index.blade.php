@@ -4,15 +4,17 @@
             <div class="top-[6rem] text-center relative z-10">
                 <h1 class=" text-white text-2xl sm:text-4xl">As Quatro Torrenzinhas</h1>
             </div>
-            <img src="{{ url('img/Torentjes.jpeg') }}" class="-mt-[3rem] w-full saturate-150">
 
+            <img src="{{ url('img/Torentjes.jpeg') }}" class="-mt-[3rem] w-full saturate-150">
         </div>
     </div>
+
     <x-body-text class="my-14">
         Geniet van de zon, de zee en de cultuur in een comfortabel en gezellige bungalow. Of je nu op zoek bent naar rust, avontuur of romantiek, er is voor ieder wat wils. Ontdek de mooiste plekjes van Portugal en voel je thuis in onze bungalow.
     </x-body-text>
+
     <x-image-slider>
-        <x-first-image>img/ZwembadMetWijn.jpg</x-first-image>
+        <x-image first="true">img/ZwembadMetWijn.jpg</x-image>
         <x-image>img/ZwembadMetWijn2.jpg</x-image>
         <x-image>img/ZwembadMetPlanten.jpg</x-image>
         <x-image>img/ZwembadMetParasol.jpg</x-image>
@@ -36,14 +38,13 @@
 
     <!-- Woonkamer -->
     <x-kamer-titel src="television.svg" kamer="Woonkamer"/>
+
     <x-image-slider>
-        <!-- Item 1 -->
-        <x-first-image>img/woonkamer/IMG_4162.jpg</x-first-image>>
-        <!-- Item 2 -->
+        <x-image first="true">img/woonkamer/IMG_4162.jpg</x-image>
         <x-image>img/woonkamer/IMG_4164.jpg</x-image>
-        <!-- Item 3 -->
         <x-image>img/woonkamer/IMG_4168.jpg</x-image>
     </x-image-slider>
+
     <div x-data="{ show: true }" class="flex items-center justify-center mt-2 text-lg">
         <template  x-if="!show">
             <button @click="show = !show" class="text-blue-500 hover:text-blue-700">
@@ -58,7 +59,8 @@
             </div>
         </template>
     </div>
-    <div class="" x-data="{ activeButton: null, buttons: [
+
+    <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Speel je favoriete muziek, podcasts of radiozenders af in de bungalow. De bungalow heeft een Sonos speaker in de woonkamer en het terras voor een geweldig geluid en een makkelijke bediening.', image: '{{ asset('img/svg/woonkamer/sonos.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'De woonkamer van de bungalow is ruim en gezellig. Er is plek voor 6 personen om te zitten en te relaxen. Je kunt op de bank hangen, een spelletje spelen of van het uitzicht genieten.', image: '{{ asset('img/svg/woonkamer/people.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Er is Netflix op de TV. Voor als het regent of gewoon onderuit naar een filmpje kijken.', image: '{{ asset('img/svg/woonkamer/netflix.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -72,13 +74,13 @@
     <x-kamer-titel src="stove.svg" kamer="Keuken"/>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/keuken/IMG_1609.jpg</x-first-image>
+        <x-image first="true">img/keuken/IMG_1609.jpg</x-image>
         <!-- Item 2 -->
         <x-image>img/keuken/IMG_1610.jpg</x-image>
         <!-- Item 3 -->
         <x-image>img/keuken/IMG_1611.jpg</x-image>
     </x-image-slider>
-    <div class="" x-data="{ activeButton: null, buttons: [
+    <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Je hoeft je geen zorgen te maken over de afwas want er is een vaatwasser in de keuken aanwezig.', image: '{{ asset('img/svg/keuken/dishwasher.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Je kunt ook heerlijke gerechten bereiden in de oven, die verschillende standen heeft.', image: '{{ asset('img/svg/keuken/oven.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Je kleding blijft schoon en fris dankzij de wasmachine, die zuinig en stil is. ', image: '{{ asset('img/svg/keuken/washing-machine.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -94,11 +96,11 @@
     <x-kamer-subtitel>Voorzijde</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/slaapkamers/voorzijde1.jpg</x-first-image>
+        <x-image first="true">img/slaapkamers/voorzijde1.jpg</x-image>
         <!-- Item 2 -->
         <x-image>img/slaapkamers/voorzijde2.jpg</x-image>
     </x-image-slider>
-    <div class="" x-data="{ activeButton: null, buttons: [
+    <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed. ', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Voldoende kastruimte voor uw kleding. En uw koffer(s) er bovenop. ', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'De ramen in kiepstand zetten. De luiken dicht.', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -109,9 +111,9 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/svg/cross.svg</x-first-image>
+        <x-image first="true">img/svg/cross.svg</x-image>
     </x-image-slider>
-    <div class="" x-data="{ activeButton: null, buttons: [
+    <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed.', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Voldoende kastruimte voor uw kleding. En uw koffer(s) er bovenop.', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'De ramen in kiepstand zetten. De luiken dicht.', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -120,11 +122,13 @@
     </div>
 
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
+
     <x-image-slider>
-        <!-- Item 1 -->
-        <x-first-image>img/svg/cross.svg</x-first-image>
+        <x-image first="true">img/slaapkamers/achterzijde1.jpeg</x-image>
+        <x-image>img/slaapkamers/achterzijde2.jpeg</x-image>
     </x-image-slider>
-    <div class="" x-data="{ activeButton: null, buttons: [
+
+    <div class="" x-data="{ activeButton: 0, buttons: [
             { text: 'Queen size bed. ', image: '{{ asset('img/svg/slaapkamers/bed.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'Voldoende kastruimte voor uw kleding. En uw koffer(s) er bovenop.', image: '{{ asset('img/svg/slaapkamers/kast.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             { text: 'De ramen in kiepstand zetten. De luiken dicht.', image: '{{ asset('img/svg/slaapkamers/raam.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
@@ -138,35 +142,20 @@
     <x-kamer-subtitel>Master</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/svg/cross.svg</x-first-image>
+        <x-image first="true">img/svg/cross.svg</x-image>
     </x-image-slider>
-{{--    <div class="" x-data="{ activeButton: null, buttons: [--}}
-{{--            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            ] }">--}}
-{{--        <x-body-icon></x-body-icon>--}}
-{{--    </div>--}}
-
     <x-kamer-subtitel>Achter</x-kamer-subtitel>
     <x-image-slider>
         <!-- Item 1 -->
-        <x-first-image>img/badkamers/IMG_1565.jpg</x-first-image>
+        <x-image first="true">img/badkamers/IMG_1565.jpg</x-image>
         <!-- Item 2 -->
         <x-image>img/badkamers/IMG_1566.jpg</x-image>
     </x-image-slider>
-{{--    <div class="" x-data="{ activeButton: null, buttons: [--}}
-{{--            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            ] }">--}}
-{{--        <x-body-icon></x-body-icon>--}}
-{{--    </div>--}}
 
     <!-- Achtertuin -->
     <x-kamer-titel src="pool.svg" kamer="Achtertuin"/>
     <x-image-slider>
-        <x-first-image>img/achtertuin/IMG_4180.jpg</x-first-image>
+        <x-image first="true">img/achtertuin/IMG_4180.jpg</x-image>
         <x-image>img/achtertuin/IMG_4160.jpg</x-image>
         <x-image>img/achtertuin/IMG_4171.jpg</x-image>
         <x-image>img/achtertuin/IMG_4174.jpg</x-image>
@@ -182,11 +171,4 @@
         <x-image>img/achtertuin/IMG_4202.jpg</x-image>
         <x-image>img/achtertuin/IMG_4204.jpg</x-image>
     </x-image-slider>
-{{--    <div class="" x-data="{ activeButton: null, buttons: [--}}
-{{--            { text: 'Lekker douchen', image: '{{ asset('img/svg/badkamers/shower.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Niet gemaakt voor hydrofluoric acid', image: '{{ asset('img/svg/badkamers/bath.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            { text: 'Wel gemaakt om je handen te wassen', image: '{{ asset('img/svg/badkamers/sink.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },--}}
-{{--            ] }">--}}
-{{--        <x-body-icon></x-body-icon>--}}
-{{--    </div>--}}
 </x-app>

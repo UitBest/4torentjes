@@ -14,14 +14,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- scripts -->
-{{--        @vite(['resources/sass/app.scss', 'resources/js/app.cjs', 'resources/css/app.css'])--}}
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css?version=1.0.0" />
-        @livewireStyles
-
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
         <div id="app"><!--sm:bg-[#f3eed8] -->
@@ -38,7 +31,6 @@
                 </main>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-        @livewireScripts
         </div>
     </body>
 </html>

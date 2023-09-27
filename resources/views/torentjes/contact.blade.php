@@ -4,10 +4,9 @@
             <h1 class="text-center text-4xl not-italic">Zou u graag deze sfeervolle bungalow bewonen voor een tijdje?</h1>
             <h1 class="text-center mt-16 text-2xl not-italic">Dan kunt u me bereiken via,</h1>
             <div class="flex space-y-6 sm:mx-62 items-center justify-center flex-row mt-4 not-italic"></div>
-            <div class="" x-data="{ activeButton: null, buttons: [
-            { text: '0031-6 53 33 11 74', link: 'tel:0031-6 53 33 11 74', image: '{{ asset('img/svg/phone.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'will@cuijpers.st', link: 'mailto:will@cuijpers.st', image: '{{ asset('img/svg/mail.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
-            { text: 'Kopheuvel 9, Best', link: 'https://goo.gl/maps/jd1jcWH41q32UF1m9', image: '{{ asset('img/svg/pin.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' }
+            <div class="" x-data="{ activeButton: 0, buttons: [
+                { text: 'will@cuijpers.st', link: 'mailto:will@cuijpers.st', image: '{{ asset('img/svg/mail.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
+                { text: '0031-6 53 33 11 74', link: 'tel:0031-6 53 33 11 74', image: '{{ asset('img/svg/phone.svg') }}', arrowImage: '{{ asset('img/svg/arrow-down.svg') }}' },
             ] }">
                 <div class="flex justify-evenly w-full my-4">
                     <template x-for="(button, index) in buttons" :key="index">
