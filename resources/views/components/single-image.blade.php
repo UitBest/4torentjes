@@ -1,10 +1,6 @@
-<div
-    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out"
-    data-te-carousel-item
-    @if(isset($first)) data-te-carousel-active @endif
+<div class="hidden duration-700 ease-in-out"
+     data-carousel-item
+        @if(isset($first)) data-carousel-active @endif
 >
-    <img
-        src="{{ $slot }}"
-        class="block w-full object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]"
-    />
+    <img src="{{ $slot }}" class="rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
 </div>

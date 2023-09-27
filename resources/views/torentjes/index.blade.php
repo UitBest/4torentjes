@@ -53,7 +53,7 @@
         </template>
 
         <template x-if="show">
-            <div class="ml-4 flex items-center justify-center">
+            <div class="ml-4 flex items-center justify-center text-green-800">
                 <p>Klik op de icoontjes voor meer informatie.</p>
                 <button @click="show = false" class="h-10 w-10"><img src="{{ asset('img/svg/cross.svg') }}"></button>
             </div>
