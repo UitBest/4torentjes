@@ -35,6 +35,14 @@
         Heb je tips voor de volgende gasten of voor ons. (Restaurant, strandjes, winkels enz.) laat het weten in het gastenboek. We nemen het graag in het handboek over.
     </x-body-text>
 
+    <!-- Arial -->
+    <x-kamer-titel src="television.svg" kamer="Arial"/>
+
+    <x-image-slider>
+        <x-single-image first="true">img/arial/arial1.jpg</x-single-image>
+        <x-single-image>img/arial/arial2.jpg</x-single-image>
+        <x-single-image>img/arial/arial3.jpg</x-single-image>
+    </x-image-slider>
 
     <!-- Woonkamer -->
     <x-kamer-titel src="television.svg" kamer="Woonkamer"/>

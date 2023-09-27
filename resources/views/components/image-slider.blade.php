@@ -1,4 +1,4 @@
-<div id="controls-carousel" class="relative w-full px-10" data-carousel="slide" data-te-interval="4000">
+<div id="animation-carousel" class="relative w-full px-10" data-carousel="static">
     <!-- Carousel wrapper -->
     <div class="relative overflow-hidden rounded-lg h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px]">
         {{ $slot }}
