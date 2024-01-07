@@ -47,6 +47,6 @@ Volg deze eenvoudige stappen om een lokale kopie aan de praat te krijgen.
 
 ## Contact
 
-Timo Cuijpers - timo@dieder.it
+Timo Cuijpers - timo@uit.best
 
 Website: https://www.4torentjes.nl/
