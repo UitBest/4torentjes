@@ -1,5 +1,7 @@
 # 4Torentjes.nl
 
+https://www.4torentjes.nl/
+
 ## Over de Website
 Dit is de website van mijn opa's huisje in Portugal. Let op: de code in deze repository is een verouderde versie van de website. De huidige website is geschreven in Laravel Vue.
 
@@ -48,5 +50,4 @@ Volg deze eenvoudige stappen om een lokale kopie aan de praat te krijgen.
 ## Contact
 
 Timo Cuijpers - timo@uit.best
-
-Website: https://www.4torentjes.nl/
+https://timo.uit.best/
